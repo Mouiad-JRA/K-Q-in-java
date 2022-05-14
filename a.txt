@@ -1,0 +1,65 @@
+		// groups of 2
+		
+		//Horizontal
+		int r = -1, c = -1;
+		for ( int i = 0; i < 2; ++i )
+			for ( int j = 0; j < 4; ++j ) {
+				int dj = j + 1;
+				if ( j == 3 )
+					dj = -j;
+				if ( map[ i ][ j ].equals( "1" ) && map[ i ][ dj ].equals( "1" ) ) {
+					r = i; c = j;
+				}
+			}
+		String match[] = { "ab", "Ab","AB","aB"};
+		if ( r != -1 ) {
+			String s1 = match[ r ]; String s2 = r == 3 ? match[ 0 ] : match[ r + 1 ];
+			if ( s1.charAt( 0 ) == s2.charAt( 0 ) )
+				Y = ( s1.charAt( 0 ) == 'a' ? "A'" : "A" );
+			else
+				Y = ( s1.charAt( 0 ) == 'b' ? "B'" : "B" );
+			Y += c == 0 ? "C'" : "C";
+		}
+		
+
+		
+		// cheek for one point
+		//make it  one-dimensional array Easier
+		
+		String a[]=new String [8];
+		for (int j=0;j<4;j++)
+			   a[j]=map[0][j];
+		for (int j=4;j<8;j++)
+			   a[j]=map[1][j-4];
+		
+		int one = 0;
+		
+		for ( int i = 0; i < 8; ++i )
+			if ( a[ i ].equals("1") )
+				++one;
+		
+		if ( one == 1 )
+			{
+			if (a[0].equals("1"))
+				 Y="A'B'C'";
+			else if (a[1].equals("1"))
+				 Y="AB'C'";
+			else if (a[2].equals("1"))	
+				 Y="ABC'";
+			else if (a[3].equals("1"))
+				 Y="A'BC'";
+			else if (a[4].equals("1"))
+				 Y="A'B'C";
+			else if (a[5].equals("1"))
+				 Y="AB'C";
+			else if (a[6].equals("1"))
+				 Y="ABC";
+			else if (a[7].equals("1"))
+				Y="A'BC";
+			}
+		else if ( one == 0 )
+			Y = "0";
+		
+		
+		txt.appendText(Y);
+	  	Y="";
