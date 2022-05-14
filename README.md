@@ -29,4 +29,4 @@ To Run the Project jsut clone it and download JAVA 10 then run the run.ex file a
 
 https://user-images.githubusercontent.com/66889657/168446987-58a68f76-cf47-4f77-8298-3fd22b2e8b5f.mp4
 
-
+<img src=https://user-images.githubusercontent.com/66889657/168446987-58a68f76-cf47-4f77-8298-3fd22b2e8b5f.mp4 alt="" width="500" height="600">
