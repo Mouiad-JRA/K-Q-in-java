@@ -25,4 +25,4 @@ The goal of the project is to implement the previous solution of a Markov map us
 
 To Run the Project jsut clone it and download JAVA 10 then run the run.ex file and follow this demo
 
-[![Watch the video](K-Q-in-java\Output\Media2.mp4)](K-Q-in-java\Output\Media2.mp4)
+[![Watch the video](https://github.com/Mouiad-JRA/K-Q-in-java/blob/main/Output/Media1.mp4)](https://github.com/Mouiad-JRA/K-Q-in-java/blob/main/Output/Media1.mp4)
